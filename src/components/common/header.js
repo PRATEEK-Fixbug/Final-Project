@@ -26,6 +26,8 @@ class Header extends React.Component {
                         <img src="user-icon.png" alt="User Icon" />
                     </button>
                 </div>
+                       
+       
             </header>
         );
     }

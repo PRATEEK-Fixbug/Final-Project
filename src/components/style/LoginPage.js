@@ -1,11 +1,11 @@
 import React from 'react';
-import './LoginPage.css'; // Create this CSS file for styling
+import './LoginPage.css';
 
 const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="login-form">
-        <h2>Login</h2>
+        <h2>Login here</h2>
         <form>
           <div className="form-group">
             <label htmlFor="username">Username</label>
