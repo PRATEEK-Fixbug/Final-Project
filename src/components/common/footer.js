@@ -14,7 +14,7 @@ class Footer extends React.Component {
                         <a href="#" className="social-icon instagram">Instagram</a>
                         <a href="#" className="social-icon linkedin">LinkedIn</a>
                     </div>
-                    <p className="copyright">© 2023 Your Website</p>
+                    <p className="copyright">© 2023 Smash</p>
                 </div>
             </footer>
         );

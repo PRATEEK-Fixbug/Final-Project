@@ -156,6 +156,7 @@ background: radial-gradient(circle, rgba(221,237,14,1) 0%, rgba(231,230,233,1) 0
   opacity: 0.7;
 }
 
+
 body, li {
   margin: 0;
   padding: 0;
@@ -171,20 +172,16 @@ align-items: center;
 }
 .profile-content {
   flex: 1;
-  background-image: url('/src/components/style/homepagebackgound.png'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
-  background-size: cover; /* Adjust as needed */
+  background-image: url('/src/components/style/homepagebackgound.png'); 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  /* Other styles */
 }
 
 
-/* 
-** Layout, Text & Colors 
-*/
 
 p {
   line-height: 1.5;
@@ -195,14 +192,40 @@ p {
   margin: 20px auto;
 }
 
-/* Cards */
 .card-column {
   width: 50%;
   float: left;
   padding: 4%;
   box-sizing: border-box;
   padding: 50px;
+  animation: shake;
 }
+
+.class:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 
 .column-1 {
   padding-top: 150px;
@@ -261,15 +284,12 @@ p {
   background-color: #888DA7;
 }
 
-/* The cover (expanding background) */
 .cover {
   position: fixed;
   background: #EB5160;
   z-index: 100;
   transform-origin: 50% 50%;
 }
-
-/* The open page content */
 .open-content {
   width: 100%;
   z-index: 110;
@@ -301,7 +321,7 @@ p {
   margin-right: auto;
 }
 .text {
-  font-family:"Times New Roman";
+  font-family:"algerian";
   font-size: 100px;
   display: flex;
   bottom: 20vh;
@@ -315,7 +335,7 @@ p {
 }
 
 .space {
-  width: 40px; /* Adjust the width to control the spacing */
+  width: 40px;
 }
 
 .letter {
@@ -339,4 +359,38 @@ p {
 .wrapper:hover .shadow {
   opacity: 0;
   transform: translateY(100%);
+}
+
+
+.image2{
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card2 {
+  display: inline-block;
+  margin: 10px;
+  width: 320px;
+  border: 2px solid rgba(235, 235, 235, .35);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: 12px;
+  color: white;
+  background: rgba(187, 205, 189, .25);
+  transition: all .25s ease;
+}
+
+
+.container2{
+  padding: 1em;
+}
+
+.card2:hover{
+  background: rgba(187, 205, 189, .55)
+}
+
+h1{
+  color: blanchedalmond;
 }

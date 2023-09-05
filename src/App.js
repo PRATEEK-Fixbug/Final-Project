@@ -3,9 +3,10 @@ import Homepage from './components/style/homepage';
 import Header from './components/common/header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/style/LoginPage';
-import HelpComponents from './components/style/ContactSection';
 import Footer from './components/common/footer';
-
+import Portfolio from './components/style/Portfolio';
+import Help from './components/style/help';
+import Knowmore from './components/style/knowmore';
 function App() {
   return (
     <div className="App">
@@ -14,11 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/LoginPage" element={<LoginPage />} />
-          <Route path="/ContactSection" element={<HelpComponents />}>
-            {/* Use relative route paths for nested routes */}
-            <Route path="comment" element={<HelpComponents.CommentSection />} />
-            <Route path="user-guide" element={<HelpComponents.UserGuideSection />} />
-          </Route>
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/knowmore" element={<Knowmore />} />
         </Routes>
         <Footer />
       </Router>

@@ -15,7 +15,8 @@ const LoginPage = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit" className='button1'>Login</button>
+          <p className='para'>Don't have an account ? <button type='submit' className='button2'>Sign up</button></p>
         </form>
       </div>
     </div>
